@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Chávez - La Paz, Bolivia</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Encabezado con logo, buscador e icono usuario -->
+    <header>
+        <div class="logo">
+            <img src="img/logo2.jpg" alt="Logo Farmacia Chávez" class="logo-img">
+            <div>
+                <h1>Farmacia Chávez</h1>
+                <p>La Paz - Bolivia | 24 hrs</p>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" id="buscador" placeholder="Buscar aquí...">
+            <button id="btnBuscar"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-icon">
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+
+    <!-- Barra de navegación principal -->
+    <nav>
+        <ul class="menu-principal">
+            <li><a href="#" data-seccion="inicio">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Marco Teórico</a>
+                <div class="dropdown-content">
+                    <a href="#introduccion">Introducción</a>
+                    <a href="#antecedentes">Antecedentes</a>
+                    <a href="#planteamiento">Planteamiento del Problema</a>
+                    <a href="#arbol">Árbol del Problema</a>
+                    <a href="#formulacion">Formulación del Problema</a>
+                    <a href="#proposito">Propósito del Estudio</a>
+                    <a href="#metodologia">Metodología</a>
+                    <a href="#planificacion">Planificación de Actividades</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Análisis Estructurado</a>
+                <div class="dropdown-content">
+                    <a href="#modelo-ambiental">Modelo Ambiental</a>
+                    <a href="#modelo-comportamiento">Modelo de Comportamiento</a>
+                </div>
+            </li>
+            <li><a href="#" data-seccion="orientado">Orientado a Objetos</a></li>
+            <li><a href="#" data-seccion="videos">Videos</a></li>
+            <li><a href="#" data-seccion="contactos">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main id="contenido-principal">
+        <!-- Sección Inicio (visible por defecto) -->
+        <section id="inicio" class="seccion activa">
+            <div class="hero">
+                <h2>Bienvenidos a Farmacia Chávez</h2>
+                <p>Más de 30 años cuidando tu salud en La Paz - Bolivia</p>
+                <p class="destacado">¡Tu salud es nuestra prioridad, las 24 horas del día!</p>
+            </div>
+            <div class="imagen-personal">
+                <img src="img/farmChavez1.jpg" alt="Personal de Farmacia Chávez" class="personal-img">
+            </div>
+        </section>
+
+        <!-- Marco Teórico -->
+        <section id="marco-teorico" class="seccion">
+            <div class="contenedor-marco">
+                <aside class="indice-lateral">
+                    <h3>Marco Teórico</h3>
+                    <ul>
+                        <li><a href="#introduccion">📘 Introducción</a></li>
+                        <li><a href="#antecedentes">📖 Antecedentes</a></li>
+                        <li><a href="#planteamiento">⚠️ Planteamiento del Problema</a></li>
+                        <li><a href="#arbol">🌳 Árbol del Problema</a></li>
+                        <li><a href="#formulacion">❓ Formulación del Problema</a></li>
+                        <li><a href="#proposito">🎯 Propósito del Estudio</a></li>
+                        <li><a href="#metodologia">🔬 Metodología</a></li>
+                        <li><a href="#planificacion">📅 Planificación de Actividades</a></li>
+                    </ul>
+                </aside>
+                <div class="contenido-marco">
+                    <div id="introduccion" class="bloque-contenido">
+                        <h2>1. Introducción</h2>
+                        <p>Hoy en día, con muchas empresas compitiendo, es importante que las farmacias utilicen cada vez más la tecnología. Farmacia Chávez, ubicada en La Paz - Bolivia, enfrenta desafíos constantes en la gestión de inventarios y documentación de transacciones. Estos obstáculos, si no se abordan adecuadamente, podrían provocar errores de procedimiento, déficits monetarios y una caída en los niveles de satisfacción del cliente.</p>
+                    </div>
+                    <div id="antecedentes" class="bloque-contenido">
+                        <h2>2. Antecedentes</h2>
+                        <p>Farmacia Chávez ha operado durante más de 20 años en la zona central de La Paz. Con el crecimiento de la ciudad, ha expandido sus servicios a diferentes macrodistritos, consolidándose como una farmacia de confianza. Sin embargo, la gestión manual de procesos ha generado ineficiencias.</p>
+                    </div>
+                    <div id="planteamiento" class="bloque-contenido">
+                        <h2>3. Planteamiento del Problema</h2>
+                        <p>La falta de un sistema integrado provoca pérdida de tiempo en búsqueda de productos, errores en precios y dificultad para controlar vencimientos. Farmacia Chávez requiere una solución tecnológica para optimizar su operación diaria.</p>
+                    </div>
+                    <div id="arbol" class="bloque-contenido">
+                        <h2>4. Árbol del Problema</h2>
+                        <p><strong>Efectos:</strong> Insatisfacción del cliente, pérdida de ventas, mala imagen.<br>
+                        <strong>Problema central:</strong> Gestión ineficiente de inventarios y ventas.<br>
+                        <strong>Causas:</strong> Procesos manuales, falta de capacitación tecnológica, ausencia de software especializado.</p>
+                    </div>
+                    <div id="formulacion" class="bloque-contenido">
+                        <h2>5. Formulación del Problema</h2>
+                        <p>¿De qué manera la implementación de un sistema de gestión farmacéutica puede mejorar los procesos de inventario y ventas en Farmacia Chávez en la ciudad de La Paz?</p>
+                    </div>
+                    <div id="proposito" class="bloque-contenido">
+                        <h2>6. Propósito del Estudio</h2>
+                        <p>Diseñar e implementar una solución tecnológica que optimice la gestión de inventarios, ventas y atención al cliente en Farmacia Chávez, mejorando la eficiencia operativa y la satisfacción de los usuarios.</p>
+                    </div>
+                    <div id="metodologia" class="bloque-contenido">
+                        <h2>7. Metodología</h2>
+                        <p>Se utilizará un enfoque mixto (cuantitativo y cualitativo). Se aplicarán encuestas a clientes, entrevistas al personal y análisis de procesos actuales. El desarrollo será ágil con entregas continuas.</p>
+                    </div>
+                    <div id="planificacion" class="bloque-contenido">
+                        <h2>8. Planificación de Actividades</h2>
+                        <ul>
+                            <li>Fase 1: Diagnóstico (2 semanas)</li>
+                            <li>Fase 2: Diseño del sistema (3 semanas)</li>
+                            <li>Fase 3: Desarrollo (4 semanas)</li>
+                            <li>Fase 4: Pruebas y capacitación (2 semanas)</li>
+                            <li>Fase 5: Implementación (1 semana)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Análisis Estructurado -->
+        <section id="analisis-estructurado" class="seccion">
+            <h2>Análisis Estructurado</h2>
+            <div class="subsecciones-analisis">
+                <div id="modelo-ambiental" class="analisis-bloque">
+                    <h3>📌 Modelo Ambiental</h3>
+                    <p>Define las entidades externas que interactúan con el sistema: Clientes, Proveedores, Administración. Farmacia Chávez recibe pedidos y entregas, y genera reportes de ventas e inventario.</p>
+                </div>
+                <div id="modelo-comportamiento" class="analisis-bloque">
+                    <h3>⚙️ Modelo de Comportamiento</h3>
+                    <p>Describe los procesos: Registrar venta, Actualizar stock, Generar alerta de vencimiento. El sistema responde a eventos como "nuevo pedido" o "producto próximo a vencer".</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secciones vacías -->
+        <!-- Orientado a Objetos -->
+        <section id="orientado" class="seccion">
+            <h2>Orientado a Objetos</h2>
+            <div class="diagrama-container">
+                <h3>Diagrama de Clases</h3>
+                <div class="imagen-diagrama">
+                    <img src="img/diagramaOO.jpg" alt="Diagrama de Clases - Orientado a Objetos" class="diagrama-img">
+                </div>
+            </div>
+        </section>
+        <section id="videos" class="seccion">
+            <h2>Videos</h2>
+            <p>Próximamente material audiovisual.</p>
+        </section>
+        <section id="contactos" class="seccion">
+            <h2>Contactos</h2>
+            <p>Dirección: Av. 16 de Julio, La Paz - Bolivia<br>Teléfono: +591 2 123456<br>Email: info@farmaciachavez.bo</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Farmacia Chávez - La Paz, Bolivia. Cuidando tu salud 24/7.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
