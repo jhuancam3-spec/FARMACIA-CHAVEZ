@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Chávez - La Paz, Bolivia</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado con logo, buscador e icono usuario -->
+    <header>
+        <div class="logo">
+            <img src="img/logo2.jpg" alt="Logo Farmacia Chávez" class="logo-img">
+            <div>
+                <h1>Farmacia Chávez</h1>
+                <p>La Paz - Bolivia | 24 hrs</p>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" id="buscador" placeholder="Buscar aquí...">
+            <button id="btnBuscar"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-icon">
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+    <!-- Barra de navegación principal -->
+    <nav>
+        <ul class="menu-principal">
+            <li><a href="#" data-seccion="inicio">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Marco Teórico</a>
+                <div class="dropdown-content">
+                    <a href="#introduccion">Introducción</a>
+                    <a href="#antecedentes">Antecedentes</a>
+                    <a href="#planteamiento">Planteamiento del Problema</a>
+                    <a href="#arbol">Árbol del Problema</a>
+                    <a href="#formulacion">Formulación del Problema</a>
+                    <a href="#proposito">Propósito del Estudio</a>
+                    <a href="#metodologia">Metodología</a>
+                    <a href="#planificacion">Planificación de Actividades</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Análisis Estructurado</a>
+                <div class="dropdown-content">
+                    <ul class="submenu">
+                    <!-- MODELO AMBIENTAL -->
+                    <li class="dropdown-right">
+                        <a href="#" onclick="mostrarApartado('ambiental')">
+                            Modelo Ambiental
+                        </a>
+                        <ul class="submenu-right">
+                            <li>
+                                <a href="#" onclick="mostrarApartado('ambiental')">
+                                    Declaración de Propósitos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="mostrarApartado('ambiental')">
+                                    Diagrama de Contexto
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="mostrarApartado('ambiental')">
+                                    Lista de Acontecimientos
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- MODELO COMPORTAMIENTO -->
+                    <li class="dropdown-right">
+                        <a href="#" onclick="mostrarApartado('comportamiento')">
+                            Modelo de Comportamiento
+                        </a>
+                        <ul class="submenu-right">
+                            <li>
+                                <a href="#" onclick="mostrarApartado('comportamiento')">
+                                    DFD por Niveles
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="mostrarApartado('comportamiento')">
+                                    DER
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="mostrarApartado('comportamiento')">
+                                    Casos de Uso
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li><a href="#" data-seccion="orientado">Orientado a Objetos</a></li>
+            <li><a href="#" data-seccion="videos">Videos</a></li>
+            <li><a href="#" data-seccion="contactos">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main id="contenido-principal">
+        <!-- Sección Inicio (visible por defecto) -->
+        <section id="inicio" class="seccion activa">
+            <div class="hero">
+                <h2>Bienvenidos a Farmacia Chávez</h2>
+                <p>Más de 30 años cuidando tu salud en La Paz - Bolivia</p>
+                <p class="destacado">¡Tu salud es nuestra prioridad, las 24 horas del día!</p>
+            </div>
+            <div class="imagen-personal">
+                <img src="img/farmChavez1.jpg" alt="Personal de Farmacia Chávez" class="personal-img">
+            </div>
+        </section>
+
+        <!-- Marco Teórico -->
+        <section id="marco-teorico" class="seccion">
+            <div class="contenedor-marco">
+                <aside class="indice-lateral">
+                    <h3>Marco Teórico</h3>
+                    <ul>
+                        <li><a href="#introduccion">📘 Introducción</a></li>
+                        <li><a href="#antecedentes">📖 Antecedentes</a></li>
+                        <li><a href="#planteamiento">⚠️ Planteamiento del Problema</a></li>
+                        <li><a href="#arbol">🌳 Árbol del Problema</a></li>
+                        <li><a href="#formulacion">❓ Formulación del Problema</a></li>
+                        <li><a href="#proposito">🎯 Propósito del Estudio</a></li>
+                        <li><a href="#metodologia">🔬 Metodología</a></li>
+                        <li><a href="#planificacion">📅 Planificación de Actividades</a></li>
+                    </ul>
+                </aside>
+                <div class="contenido-marco">
+                    <!-- Introducción (texto original) -->
+                    <div id="introduccion" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">01</span>
+                            <h2>Introducción</h2>
+                        </div>
+                        <div class="bloque-texto">
+                            <p>En la actualidad, los sistemas de información se han consolidado como herramientas estratégicas para optimizar la gestión de procesos en el sector farmacéutico. Las farmacias desempeñan un rol fundamental en la sociedad boliviana, siendo responsables de la distribución de medicamentos y productos de salud que requieren un manejo eficiente del inventario, las ventas y la atención al cliente.
+                                Farmacias Chávez, fundada en 1988 por Ana María Chávez en Santa Cruz de la Sierra, se ha posicionado como uno de los retailers farmacéuticos más importantes de Bolivia. Con más de 36 años de trayectoria, la cadena opera actualmente más de 100 sucursales distribuidas en seis departamentos del país: Santa Cruz, La Paz, Cochabamba, Tarija, Beni y Oruro, contando además con 2 Centros Médicos. A pesar de este crecimiento, la optimización de los sistemas de gestión interna se presenta como un desafío continuo en una empresa de tal envergadura.
+                                El presente proyecto tiene como objetivo el análisis y diseño de un Sistema de Gestión para Farmacias Chávez, que permita automatizar y optimizar los procesos principales: gestión de inventarios, registro de ventas, control de medicamentos y gestión de proveedores. El sistema será modelado bajo dos paradigmas complementarios: el Análisis Estructurado mediante Diagramas de Flujo de Datos (DFD) y el Análisis Orientado a Objetos mediante diagramas UML, aplicando los conocimientos adquiridos en la materia de Análisis y Diseño de Sistemas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Antecedentes (texto original) -->
+                    <div id="antecedentes" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">02</span>
+                            <h2>Antecedentes</h2>
+                        </div>
+                        <div class="bloque-texto">
+                            <p>Farmacias Chávez fue fundada en 1988 en Santa Cruz de la Sierra, Bolivia, por Ana María Chávez, como una farmacia local orientada a brindar medicamentos accesibles a la población boliviana. A lo largo de más de tres décadas, la empresa experimentó un crecimiento sostenido que la convirtió en uno de los retailers farmacéuticos líderes del país.
+                                Entre los hitos más relevantes de su trayectoria se destacan: en 2018, la incursión en el modelo de franquicias bajo la marca 'Santo Remedio'; en 2019, la conversión en la primera empresa farmacéutica boliviana en cotizar en la Bolsa Boliviana de Valores; y en 2020, la implementación del formato de 'auto-farmacias' en respuesta a las medidas de distanciamiento social durante la pandemia del COVID-19. La compañía también desarrolló un canal de comercio electrónico (online.farmaciachavez.com.bo) con servicio de delivery, y programas de fidelización como 'Lunes de Chávez' con descuentos del 7% para todos los clientes.
+                                En cuanto a reconocimientos, Farmacias Chávez ha sido certificada como 'Great Place to Work' en Bolivia en múltiples ocasiones (2023 y 2024), lo que refleja su compromiso con la gestión del talento humano. No obstante, el acelerado crecimiento de la cadena que pasó de ser una farmacia local a operar en catorce localidades de seis departamentos genera retos importantes en cuanto a la estandarización y automatización de sus procesos de gestión interna.
+                                A nivel del sector farmacéutico boliviano, persisten desafíos estructurales como el contrabando, la falsificación de medicamentos y la competencia informal, situaciones que el propio CEO de la compañía, Leonardo Salvatierra Chávez, ha señalado públicamente. Esto refuerza la necesidad de contar con sistemas de información robustos que permitan a la empresa mantener el control de su inventario, trazabilidad de productos y eficiencia operativa en toda su red de sucursales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Planteamiento del Problema (texto original) -->
+                    <div id="planteamiento" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">03</span>
+                            <h2>Planteamiento del Problema</h2>
+                        </div>
+                        <div class="bloque-texto">
+                            <p>Farmacias Chávez opera una red de más de 100 sucursales distribuidas en seis departamentos de Bolivia, atendiendo a miles de clientes diariamente. Sin embargo, la magnitud de esta operación plantea desafíos significativos en la gestión integrada de la información, especialmente en los procesos de control de inventario, registro de ventas y coordinación con proveedores.
+                                La ausencia o insuficiencia de un sistema de gestión unificado puede generar: pérdidas económicas por vencimiento de medicamentos que no son identificados a tiempo; desabastecimiento o sobrestock en sucursales específicas por falta de visibilidad en tiempo real del inventario consolidado; errores en el registro de ventas que afectan la facturación y el control financiero; demoras en la atención al cliente cuando no se cuenta con información actualizada sobre disponibilidad de productos; y dificultades en la toma de decisiones gerenciales por falta de reportes oportunos y confiables.
+                                Asimismo, la competencia desleal proveniente del contrabando y la falsificación de medicamentos —señalada por la propia empresa— exige contar con mecanismos de trazabilidad y control que permitan verificar la autenticidad y procedencia de los productos en stock.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Árbol del Problema (espacio para imagen) -->
+                    <div id="arbol" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">04</span>
+                            <h2>Árbol del Problema</h2>
+                        </div>
+                        <div class="bloque-texto">
+                            <p>El siguiente árbol de problemas sintetiza las causas y consecuencias del problema central identificado:</p>
+                            <div class="imagen-espacio">
+                                <img src="img/arbol-problema.png" alt="Árbol del Problema" class="imagen-marco">
+                                <p class="imagen-pie">Figura: Árbol del Problema - Farmacias Chávez</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulación del Problema (texto original) -->
+                    <div id="formulacion" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">05</span>
+                            <h2>Formulación del Problema</h2>
+                        </div>
+                        <div class="bloque-texto">
+                            <p>¿Cómo mejorar la gestión integrada de inventarios, ventas y control de medicamentos en la red de sucursales de Farmacias Chávez mediante el análisis y diseño de un sistema de información eficiente, aplicando los paradigmas del Análisis Estructurado y el Análisis Orientado a Objetos?</p>
+                        </div>
+                    </div>
+
+                    <!-- Propósito del Estudio (texto original) -->
+                    <div id="proposito" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">06</span>
+                            <h2>Propósito del Estudio</h2>
+                        </div>
+                        <div class="bloque-texto">
+                            <p><strong>Objetivo General</strong><br>
+                            Analizar y diseñar un Sistema de Gestión para Farmacias Chávez que permita optimizar el control de inventarios, el registro de ventas y los procesos operativos de sus sucursales, mejorando la eficiencia, la trazabilidad de productos y la calidad del servicio al cliente.</p>
+                            <p><strong>Objetivos Específicos</strong><br>
+                            Analizar y documentar los procesos actuales de gestión de inventario, ventas y compras en Farmacias Chávez.<br>
+                            Identificar los problemas, cuellos de botella y necesidades de información en el sistema actual.<br>
+                            Diseñar el modelo del sistema utilizando el paradigma del Análisis Estructurado, mediante Diagramas de Contexto y DFD.<br>
+                            Diseñar el modelo del sistema utilizando el paradigma Orientado a Objetos, mediante diagramas UML (Casos de Uso, Clases, Secuencia y Estados).<br>
+                            Definir el modelo de datos del sistema a través de un Diagrama Entidad-Relación y el Diccionario de Datos.<br>
+                            Proponer una solución tecnológica viable que responda a las necesidades operativas de la cadena farmacéutica.</p>
+                        </div>
+                    </div>
+
+                    <!-- Metodología (texto original, sin separaciones excesivas) -->
+                    <div id="metodologia" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">07</span>
+                            <h2>Metodología</h2>
+                        </div>
+                        <div class="bloque-texto">
+                            <p>El presente proyecto se desarrollará bajo un enfoque mixto, combinando el método analítico-descriptivo para el estudio de los procesos actuales de la farmacia, y el método de modelado sistemático para la propuesta de diseño del sistema.</p>
+                            <p><strong>Métodos:</strong><br>
+                            Método analítico-descriptivo: para identificar y describir los procesos operativos actuales.<br>
+                            Método de modelado: para representar gráficamente el sistema mediante DFD y UML.<br>
+                            Método inductivo: para, a partir del análisis de casos particulares, proponer soluciones generalizables.</p>
+                            <p><strong>Medios:</strong><br>
+                            Computadora con acceso a internet.<br>
+                            Software de modelado: Draw.io / Lucidchart (DFD, UML, Gantt).<br>
+                            Suite ofimática para redacción del informe.<br>
+                            Sitio web / Blog para publicación incremental del proyecto.</p>
+                            <p><strong>Instrumentos de recolección de información:</strong><br>
+                            Observación directa de los procesos en sucursales de Farmacias Chávez.<br>
+                            Entrevistas estructuradas al personal (farmacéutico regente, cajeros, administrador).<br>
+                            Revisión documental de manuales de procesos, reportes de ventas e inventario.<br>
+                            Consulta del sitio web oficial (farmaciaschavez.com.bo) y redes sociales corporativas.</p>
+                            <p><strong>Justificación:</strong><br>
+                            El desarrollo de este sistema se justifica por la necesidad de optimizar la gestión operativa de una cadena farmacéutica con más de 100 sucursales en Bolivia. La implementación de un sistema integrado permitirá reducir pérdidas por vencimiento, eliminar errores en ventas, mejorar la atención al cliente y facilitar la toma de decisiones gerenciales con información en tiempo real.</p>
+                            <p><strong>Alcance:</strong><br>
+                            El proyecto abarcará el análisis y diseño del sistema de gestión, sin incluir la implementación completa del software. Se enfocará en los módulos de: Gestión de Inventario, Registro de Ventas, Gestión de Compras y Proveedores, y Control de Medicamentos (fechas de vencimiento, alertas). El alcance geográfico de referencia es la operación nacional de Farmacias Chávez en Bolivia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Planificación de Actividades (espacio para imagen) -->
+                    <div id="planificacion" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">08</span>
+                            <h2>Planificación de Actividades</h2>
+                        </div>
+                        <div class="bloque-texto">
+                            <p>El proyecto se desarrollará en cuatro fases distribuidas a lo largo de cuatro semanas, culminando con la entrega impresa y defensa el 08 de junio de 2026.</p>
+                            <div class="imagen-espacio">
+                                <img src="img/PlanificacionActividades.png" alt="Cronograma de Actividades" class="imagen-marco">
+                                <p class="imagen-pie">Figura: Cronograma de Actividades - Diagrama de Gantt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </section>
+        <!-- ANALISIS ESTRUCTURADO -->
+        <section id="analisis-estructurado" class="seccion">
+            <section id="ambiental" class="subapartado activo">
+                <div class="contenedor-marco">
+                    <!-- MENU LATERAL -->
+                    <aside class="indice-lateral">
+                        <h3>Modelo Ambiental</h3>
+                        <ul>
+                            <li>
+                                <a href="#" onclick="irA('declaracion')">
+                                    📋 Declaración de Propósitos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="irA('contexto')">
+                                    🌐 Diagrama de Contexto
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="irA('acontecimientos')">
+                                    📌 Lista de Acontecimientos
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <!-- CONTENIDO -->
+                    <div class="contenido-marco">
+                        <div id="declaracion" class="bloque-contenido">
+                            <div class="bloque-header">
+                                <span class="numero-bloque">01</span>
+                                <h2>Declaración de Propósitos</h2>
+                            </div>
+                            <p>
+                                Realizar un sistema de ventas para la farmacia Farmacia Chávez bajo el modelo ambiental, que permita registrar los datos de las ventas realizadas en la farmacia, controlar el inventario de medicamentos y productos farmacéuticos, así como llevar el seguimiento de la cantidad de productos disponibles dentro del negocio.
+                            </p>
+
+                        </div>
+                        <div id="contexto" class="bloque-contenido">
+                            <div class="bloque-header">
+                                <span class="numero-bloque">02</span>
+                                <h2>Diagrama de Contexto</h2>
+                            </div>
+                            <img src="img/nivel0.jpg"
+                            class="imagen-diagrama">
+                        </div>
+                        <div id="acontecimientos" class="bloque-contenido">
+                            <div class="bloque-header">
+                                <span class="numero-bloque">03</span>
+                                <h2>Lista de Acontecimientos</h2>
+                            </div>
+                            <ol class="lista-eventos">
+                                <li>
+                                    <strong>Reportes farmacia:</strong>
+                                    Una farmacia se conforma principalmente de un almacén y el área de ventas. Los reportes permiten conocer la cantidad de medicamentos y productos farmacéuticos disponibles, además de identificar cuáles están agotados o próximos a agotarse.
+                                </li>
+                                <li>
+                                    <strong>Datos medicamentos:</strong>
+                                    Cada medicamento o producto farmacéutico puede interactuar con el sistema mediante código de barras para cargar información como nombre, precio, fecha de vencimiento y cantidad disponible.
+                                </li>
+                                <li>
+                                    <strong>Datos compra medicamentos:</strong>
+                                    El gerente registra las compras de medicamentos y productos farmacéuticos que ingresarán al almacén, permitiendo generar reportes de inventario.
+                                </li>
+                                <li>
+                                    <strong>Solicitud de medicamentos:</strong>
+                                    Cuando el stock está agotado o próximo a agotarse, se genera una solicitud para abastecer nuevamente la farmacia.
+                                </li>
+                                <li>
+                                    <strong>Datos stock medicamentos:</strong>
+                                    El encargado de almacén podrá actualizar información sobre el stock y corregir discrepancias encontradas en inventario.
+                                </li>
+                                <li>
+                                    <strong>Datos farmacéutico/vendedor:</strong>
+                                    El gerente registrará farmacéuticos y vendedores para que puedan acceder al sistema y realizar ventas.
+                                </li>
+                                <li>
+                                    <strong>Datos proveedor:</strong>
+                                    El sistema almacenará información sobre proveedores, compras realizadas, facturas y fechas de entrega.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="comportamiento" class="subapartado">
+                <div class="contenedor-marco">
+                    <!-- MENU LATERAL -->
+                    <aside class="indice-lateral">
+                        <h3>Modelo de Comportamiento</h3>
+                        <ul>
+                            <li><a href="#" onclick="irA('nivel0')">🔵 Nivel 0</a></li>
+                            <li><a href="#" onclick="irA('nivel1')">🟢 Nivel 1</a></li>
+                            <li><a href="#" onclick="irA('nivel2')">🟠 Nivel 2</a></li>
+                            <li><a href="#" onclick="irA('nivel3')">🟣 Nivel 3</a></li>
+                            <li><a href="#" onclick="irA('nivel4')">🔴 Nivel 4</a></li>
+                            <li><a href="#" onclick="irA('nivel5')">⚫ Nivel 5</a></li>
+                            <li><a href="#" onclick="irA('der')">🧩 Entidad Relación</a></li>
+                        </ul>
+                    </aside>
+                    <!-- CONTENIDO -->
+                    <div class="contenido-marco">
+                        <h3>Diagrama de Flujo por niveles</h3>
+                        <div id="nivel0" class="bloque-contenido">
+                            <div class="bloque-header">
+                                <span class="numero-bloque">01</span>
+                                <h2>Nivel 0</h2>
+                            </div>
+                            <img src="img/nivel0.jpg" class="imagen-diagrama">
+                        </div>
+                        <div id="nivel1" class="bloque-contenido">
+                            <div class="bloque-header">
+                                <span class="numero-bloque">02</span>
+                                <h2>Nivel 1</h2>
+                            </div>
+                            <img src="img/nivel1.jpg" class="imagen-diagrama">
+                        </div>
+                        <div id="nivel2" class="bloque-contenido">
+                            <div class="bloque-header">
+                                <span class="numero-bloque">03</span>
+                                <h2>Nivel 2</h2>
+                            </div>
+                            <img src="img/nivel2.jpg" class="imagen-diagrama">
+                        </div>
+                        <div id="nivel3" class="bloque-contenido">
+                            <div class="bloque-header">
+                                <span class="numero-bloque">04</span>
+                                <h2>Nivel 3</h2>
+                            </div>
+                            <img src="img/nivel3.jpg" class="imagen-diagrama">
+                        </div>
+                        <div id="nivel4" class="bloque-contenido">
+                            <div class="bloque-header">
+                                <span class="numero-bloque">05</span>
+                                <h2>Nivel 4</h2>
+                            </div>
+                            <img src="img/nivel4.jpg" class="imagen-diagrama">
+                        </div>
+                        <div id="nivel5" class="bloque-contenido">
+                            <div class="bloque-header">
+                                <span class="numero-bloque">06</span>
+                                <h2>Nivel 5</h2>
+                            </div>
+                            <img src="img/nivel5.jpg" class="imagen-diagrama">
+                        </div>
+                        <div id="der" class="bloque-contenido">
+                            <div class="bloque-header">
+                                <span class="numero-bloque">07</span>
+                                <h2>Diagrama Entidad Relación</h2>
+                            </div>
+                            <img src="img/entidad-relacion.jpg" class="imagen-diagrama">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Orientado a Objetos -->
+        <section id="orientado" class="seccion">
+            <div class="contenedor-marco">
+                <!-- MENU LATERAL -->
+                <aside class="indice-lateral">
+                    <h3>Orientado a objetos</h3>
+                    <ul>
+                        <li><a href="#" onclick="irA('OrientadoObjetos')">🧩 Diagrama de Clases</a></li>
+                        <li><a href="#" onclick="irA('procesos')">⚙️ Procesos</a></li>
+                        <li><a href="#" onclick="irA('casos')">👥 Casos de Uso</a></li>
+                        <li><a href="#" onclick="irA('negocio')">🏢 Casos de Uso Negocio</a></li>
+                        <li><a href="#" onclick="irA('expandido')">📄 Casos Expandido</a></li>
+                    </ul>
+                </aside>
+                <div class="contenido-marco">
+                    <div id="OrientadoObjetos" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">01</span>
+                            <h2>Diagrama de Clases</h2>
+                        </div>
+                        <img src="img/diagramaOO.jpg" class="imagen-diagrama">
+                    </div>
+                    <div id="procesos" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">02</span>
+                            <h2>Diagrama de Procesos</h2>
+                        </div>
+                        <img src="img/procesos.jpg" class="imagen-diagrama">
+                    </div>
+                    <div id="casos" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">09</span>
+                            <h2>Casos de Uso</h2>
+                        </div>
+                        <img src="img/casos-uso.jpg" class="imagen-diagrama">
+                    </div>
+                    <div id="negocio" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">10</span>
+                            <h2>Casos de Uso de Negocio</h2>
+                        </div>
+                        <img src="img/casos-negocio.jpg" class="imagen-diagrama">
+                    </div>
+                    <div id="expandido" class="bloque-contenido">
+                        <div class="bloque-header">
+                            <span class="numero-bloque">11</span>
+                            <h2>Casos de Uso Expandido</h2>
+                        </div>
+                        <img src="img/casos-expandido.jpg" class="imagen-diagrama">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="videos" class="seccion">
+            <h2>Videos</h2>
+            <p>Próximamente material audiovisual.</p>
+        </section>
+        <!-- CONTACTOS -->
+        <section id="contactos" class="seccion">
+            <div class="contenedor-contactos">
+                <!-- INTEGRANTES -->
+                <div class="integrantes">
+                    <h2>Integrantes</h2>
+                    <div class="integrante">
+                        Univ. CHURA LIMA LIZBETH BELINDA
+                    </div>
+                    <div class="integrante">
+                        Univ. HUANCA MAMANI JAQUELIN ARACELY
+                    </div>
+                    <div class="integrante">
+                        Univ. MAMANI HUALLPA LIZET MABEL
+                    </div>
+                    <div class="integrante">
+                        Univ. VELARDE COPANA JHEREMY IVAN
+                    </div>
+                    <div class="integrante">
+                        Univ. YUJRA MARAZA ALAN GABRIEL
+                    </div>
+                </div>
+                <!-- CONTACTANOS -->
+                <div class="info-contacto">
+                    <h2>Contáctanos</h2>
+                    <p>
+                        En Farmacia Chávez nos esforzamos por brindar una atención rápida, segura y confiable a nuestros clientes. 
+                        Nuestro sistema de gestión farmacéutica busca optimizar el control de medicamentos, ventas e inventario, 
+                        permitiendo mejorar la calidad del servicio y la administración de la farmacia.
+                    </p>
+                    <div class="dato-contacto">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>
+                            Dirección: Av. Mariscal Santa Cruz, 
+                            Centro, La Paz - Bolivia
+                        </span>
+                    </div>
+                    <div class="dato-contacto">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>
+                            Celular: +591 76543210
+                        </span>
+                    </div>
+                    <div class="dato-contacto">
+                        <i class="fas fa-envelope"></i>
+                        <span>
+                            E-mail: farmaciachavez@gmail.com
+                        </span>
+                    </div>
+                    <div class="horarios">
+                        <h3>Horarios de Atención</h3>
+                        <p>Lunes – Viernes: 08:00 AM – 10:00 PM</p>
+                        <p>Sábado: 09:00 AM – 09:00 PM</p>
+                        <p>Domingo: 09:00 AM – 06:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <!-- GOOGLE MAPS -->
+            <div class="mapa-container">
+                <h2>Ubicación</h2>
+                <iframe
+                    src="https://www.google.com/maps?q=Farmacia%20Chavez%20La%20Paz%20Bolivia&output=embed"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Farmacia Chávez - La Paz, Bolivia. Cuidando tu salud 24/7.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
