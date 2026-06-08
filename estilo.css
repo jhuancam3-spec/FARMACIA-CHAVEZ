@@ -817,3 +817,22 @@ html{
     margin:20px auto;
 
 }
+.hero h2{
+    font-size: 42px;
+    color: #0d47a1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p{
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.destacado{
+    font-weight: 600;
+    color: #1565c0;
+    font-size: 20px;
+}
