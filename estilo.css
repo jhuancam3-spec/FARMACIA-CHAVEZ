@@ -812,9 +812,7 @@ html{
 }
 .arbol{
 
-    width:25%;
-    max-width:100px;
-
+    max-width:200px;
     display:block;
     margin:20px auto;
 
