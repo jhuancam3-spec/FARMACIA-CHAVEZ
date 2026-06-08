@@ -814,18 +814,18 @@ html{
 
     text-align:center;
     max-width:600px;
-    margin:20px auto;
+    margin:10px auto;
 
 }
 
 .hero h2{
-    font-size:20px;
+    font-size:30px;
 }
 
 .hero p{
-    font-size:14px;
+    font-size:24px;
 }
 
 .destacado{
-    font-size:15px;
+    font-size:25px;
 }
