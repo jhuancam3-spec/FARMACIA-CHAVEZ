@@ -810,3 +810,12 @@ html{
     border-radius:20px;
     box-shadow:0 5px 20px rgba(0,0,0,0.2);
 }
+.arbolimg{
+
+    width:50%;
+    max-width:600px;
+
+    display:block;
+    margin:20px auto;
+
+}
