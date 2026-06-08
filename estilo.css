@@ -819,24 +819,13 @@ html{
 }
 
 .hero h2{
-
-    font-size:16px;
-    color:#0d47a1;
-    margin-bottom:20px;
-
+    font-size:20px;
 }
 
 .hero p{
-
-    font-size:9px;
-    line-height:1.6;
-
+    font-size:14px;
 }
 
 .destacado{
-
-    margin-top:7px;
-    font-weight:300;
-    color:#1565c0;
-
+    font-size:15px;
 }
