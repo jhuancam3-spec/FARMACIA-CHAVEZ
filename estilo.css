@@ -861,10 +861,9 @@ html{
 /* VIDEO */
 .video-container iframe{
 
-    width: 700px;
-    height: 400px;
-
-    max-width: 90%;
+    width:100%;
+    max-width:900px;
+    height:500px;
 
     border: none;
     border-radius: 12px;
