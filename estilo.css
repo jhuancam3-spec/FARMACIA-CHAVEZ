@@ -848,3 +848,43 @@ html{
     border-radius:10px;
 
 }
+/* VIDEOS */
+
+.video-container{
+
+    text-align:center;
+    margin:30px auto;
+
+}
+
+.video-container iframe{
+
+    max-width:100%;
+    border-radius:15px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+
+}
+
+.video-info{
+
+    max-width:900px;
+    margin:20px auto;
+
+    text-align:center;
+
+}
+
+.video-info h3{
+
+    color:#0d47a1;
+    margin-bottom:15px;
+
+}
+
+.video-info p{
+
+    text-align:justify;
+    line-height:1.8;
+
+}
