@@ -850,41 +850,50 @@ html{
 }
 /* VIDEOS */
 
+/* CONTENEDOR DEL VIDEO */
 .video-container{
 
-    text-align:center;
-    margin:30px auto;
+    text-align: center;
+    margin: 25px auto;
 
 }
 
+/* VIDEO */
 .video-container iframe{
 
-    max-width:100%;
-    border-radius:15px;
+    width: 700px;
+    height: 400px;
 
-    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    max-width: 90%;
+
+    border: none;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 
 }
 
+/* INFORMACIÓN DEL VIDEO */
 .video-info{
 
-    max-width:900px;
-    margin:20px auto;
+    max-width: 700px;
 
-    text-align:center;
+    margin: 15px auto 40px auto;
+
+    text-align: center;
 
 }
 
 .video-info h3{
 
-    color:#0d47a1;
-    margin-bottom:15px;
+    color: #0d47a1;
+    margin-bottom: 10px;
 
 }
 
 .video-info p{
 
-    text-align:justify;
-    line-height:1.8;
+    font-size: 15px;
+    line-height: 1.5;
 
 }
